@@ -88,7 +88,7 @@ $db->select_db("$dbname");
  {
    $username =$_POST['username'];
    $password=$_POST['password'];
-   $query="SELECT * FROM users WHERE username = '$username' AND password = '$password'"; //quary
+   $query="SELECT * FROM users WHERE username = '$username' AND password = '$password'"; 
    $result=$db->query($query);
    $num_rows=$result->num_rows;
    for($i=0;$i<$num_rows;$i++)
