@@ -607,7 +607,7 @@ body {
  * Includes support for styling links too.
  */
 .u-c-brand {
-  color: #ff4500 !important; }
+  color: #85285d !important; }
 
 .u-c-secondary {
   color: #333333 !important; }
@@ -696,19 +696,19 @@ body {
 .btn--e-brand {
   color: #ffffff;
   border: 1px solid transparent;
-  background-color: #ff4500;
+  background-color: #85285d;
   transition: background-color .5s ease-in; }
   .btn--e-brand:hover {
-    background-color: #fa4400; }
+    background-color: #cc95b4; }
 
 .btn--e-brand-b-2 {
   color: #ffffff;
-  background-color: #ff4500;
-  border: 2px solid #ff4500;
+  background-color: #85285d;
+  border: 2px solid #85285d;
   transition: background-color 0.5s ease-in, border-color 0.5s ease-in; }
   .btn--e-brand-b-2:hover {
-    background-color: #fa4400;
-    border-color: #fa4400; }
+    background-color: #cc95b4;
+    border-color: #cc95b4; }
 
 .btn--e-grey-b-2 {
   color: #333333;
@@ -6049,11 +6049,11 @@ input::-ms-clear {
   .hero-slide--6 {
     background-image: url(../images/slider/slide-6.jpg); }
   .hero-slide--7 {
-    background-image: url(../images/slider/slide-7.jpg); }
+    background-image: url(../images/costum-images/slideshow-v1.webp); }
   .hero-slide--8 {
-    background-image: url(../images/slider/slide-8.jpg); }
+    background-image: url(../images/costum-images/06_Y&О_energise.jpg); }
   .hero-slide--9 {
-    background-image: url(../images/slider/slide-9.jpg); }
+    background-image: url(../images/costum-images/07_Y&О_energise.jpg); }
 
 .owl-carousel .owl-dots {
   position: absolute; }
