@@ -1,7 +1,7 @@
 <?php
 
 $hname= "localhost";
-$uname= "superootuser";
+$uname= "superuser";
 $password = "p@ssword1";
 $db_name = "shoppingdb_production";
 $conn = mysqli_connect($hname, $uname, $password, $db_name);

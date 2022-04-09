@@ -1492,12 +1492,12 @@
 
                                                 <label class="gl-label" for="reg-email">E-MAIL *</label>
 
-                                                <input class="input-text input-text--primary-style" type="text" id="reg-email" placeholder="Enter E-mail" ></div>
+                                                <input class="input-text input-text--primary-style" type="text" id="reg-email" placeholder="Enter E-mail" method="post" <?php isset($_GET['email'])?> ></div>
                                             <div class="u-s-m-b-30">
 
                                                 <label class="gl-label" for="reg-password">PASSWORD *</label>
 
-                                                <input class="input-text input-text--primary-style" type="text" id="reg-password" placeholder="Enter Password"></div>
+                                                <input class="input-text input-text--primary-style" type="text" id="reg-password" placeholder="Enter Password" method="post" <?php isset($_GET['password'])?>></div>
                                             <div class="u-s-m-b-15">
 
                                                 <button class="btn btn--e-transparent-brand-b-2" type="submit">CREATE</button></div>

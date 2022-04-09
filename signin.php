@@ -1490,7 +1490,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                                         <span class="gl-text u-s-m-b-30">If you have an account with us, please log in.</span>
                                         <form class="l-f-o__form">
                                             <div class="gl-s-api">
-                                                <div class="u-s-m-b-15">
+                                                <!-- <div class="u-s-m-b-15">
 
                                                     <button class="gl-s-api__btn gl-s-api__btn--fb" type="button"><i class="fab fa-facebook-f"></i>
 
@@ -1500,17 +1500,17 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                                                     <button class="gl-s-api__btn gl-s-api__btn--gplus" type="button"><i class="fab fa-google"></i>
 
                                                         <span>Signin with Google</span></button></div>
-                                            </div>
+                                            </div> -->
                                             <div class="u-s-m-b-30">
 
                                                 <label class="gl-label" for="login-email">E-MAIL *</label>
 
-                                                <input class="input-text input-text--primary-style" type="text" id="login-email" placeholder="Enter E-mail" method="post" name="email" ></div>
+                                                <input class="input-text input-text--primary-style" type="text" id="login-email" placeholder="Enter E-mail" method="post" name="email" <?php isset($_GET['email'])?>></div>
                                             <div class="u-s-m-b-30">
 
                                                 <label class="gl-label" for="login-password">PASSWORD *</label>
 
-                                                <input class="input-text input-text--primary-style" type="text" id="login-password" placeholder="Enter Password" method="post" name="password"></div>
+                                                <input class="input-text input-text--primary-style" type="text" id="login-password" placeholder="Enter Password" method="post" name="password"> <?php isset($_GET['password'])?></div>
                                             <div class="gl-inline">
                                                 <div class="u-s-m-b-30">
 
