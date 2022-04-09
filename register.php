@@ -4,8 +4,14 @@
 //database connection
 $db=new mysqli("$dbhost","$dbuser","$dbpass");
 $db->select_db("$dbname");
-
 ?>
+
+
+
+
+
+
+
 <html>
 
 <head>

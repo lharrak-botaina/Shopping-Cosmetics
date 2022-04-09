@@ -1,4 +1,8 @@
-<?php ?>
+<?php include 'config.php'; ?>
+<?php
+$db=new mysqli("$dbhost","$dbuser","$dbpass");
+$db->select_db("$dbname");
+?>
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -1447,60 +1451,32 @@
 
                                                 <label class="gl-label" for="reg-fname">FIRST NAME *</label>
 
-                                                <input class="input-text input-text--primary-style" type="text" id="reg-fname" placeholder="First Name"></div>
+                                                <input class="input-text input-text--primary-style" type="text" id="reg-fname" placeholder="First Name" name="name" action="" method="post"></div>
                                             <div class="u-s-m-b-30">
 
                                                 <label class="gl-label" for="reg-lname">LAST NAME *</label>
 
-                                                <input class="input-text input-text--primary-style" type="text" id="reg-lname" placeholder="Last Name"></div>
+                                                <input class="input-text input-text--primary-style" type="text" id="reg-lname" placeholder="Last Name" name="lname"></div>
                                             <div class="gl-inline">
                                                 <div class="u-s-m-b-30">
 
                                                     <!--====== Date of Birth Select-Box ======-->
-
-                                                    <span class="gl-label">BIRTHDAY</span>
-                                                    <div class="gl-dob"><select class="select-box select-box--primary-style">
-                                                            <option selected>Month</option>
-                                                            <option value="male">January</option>
-                                                            <option value="male">February</option>
-                                                            <option value="male">March</option>
-                                                            <option value="male">April</option>
-                                                        </select><select class="select-box select-box--primary-style">
-                                                            <option selected>Day</option>
-                                                            <option value="01">01</option>
-                                                            <option value="02">02</option>
-                                                            <option value="03">03</option>
-                                                            <option value="04">04</option>
-                                                        </select><select class="select-box select-box--primary-style">
-                                                            <option selected>Year</option>
-                                                            <option value="1991">1991</option>
-                                                            <option value="1992">1992</option>
-                                                            <option value="1993">1993</option>
-                                                            <option value="1994">1994</option>
-                                                        </select></div>
+                                                    <!-- Gone! no gives a shit to your birthday. -->
                                                     <!--====== End - Date of Birth Select-Box ======-->
-                                                </div>
-                                                <div class="u-s-m-b-30">
-
-                                                    <label class="gl-label" for="gender">GENDER</label><select class="select-box select-box--primary-style u-w-100" id="gender">
-                                                        <option selected>Select</option>
-                                                        <option value="male">Male</option>
-                                                        <option value="male">Female</option>
-                                                    </select></div>
-                                            </div>
+        
                                             <div class="u-s-m-b-30">
 
                                                 <label class="gl-label" for="reg-email">E-MAIL *</label>
 
-                                                <input class="input-text input-text--primary-style" type="text" id="reg-email" placeholder="Enter E-mail" method="post" <?php isset($_GET['email'])?> ></div>
+                                                <input class="input-text input-text--primary-style" type="text" id="reg-email" placeholder="Enter E-mail" NAME="email" ></div>
                                             <div class="u-s-m-b-30">
 
                                                 <label class="gl-label" for="reg-password">PASSWORD *</label>
 
-                                                <input class="input-text input-text--primary-style" type="text" id="reg-password" placeholder="Enter Password" method="post" <?php isset($_GET['password'])?>></div>
+                                                <input class="input-text input-text--primary-style" type="text" id="reg-password" placeholder="Enter Password" NAME="password" ></div>
                                             <div class="u-s-m-b-15">
 
-                                                <button class="btn btn--e-transparent-brand-b-2" type="submit">CREATE</button></div>
+                                                <button class="btn btn--e-transparent-brand-b-2" VALUE="Register" NAME="register" type="submit">CREATE</button></div>
 
                                             <a class="gl-link" href="#">Return to Store</a>
                                         </form>
@@ -1717,3 +1693,24 @@
     </noscript>
 </body>
 </html>
+
+<?php
+  if(isset($_POST['register']))
+  {
+   $name=$_POST['name'];
+   $lname=$_POST['lname'];
+   $email=$_POST['email'];
+   $username=$_POST['username'];
+   $password=$_POST['password'];
+   $country=$_POST['country'];
+// Query
+   if ($db->query("INSERT INTO users
+    (username,email,name,lname,country,password)
+    VALUES ('$username','$email','$name','$lname','$country','$password')"))
+    print "<script>document.write('Account created :)');</script>";
+	
+	else {
+		echo 'Error :(';
+	}
+  }
+ ?>
