@@ -44,11 +44,11 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 	}
 	
 }else{
-	header("Location: index.php");
+	header("Location: index.html");
 	exit();
 }
 ?>
-
+<!-- ===== -->
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
