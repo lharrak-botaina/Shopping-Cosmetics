@@ -1505,7 +1505,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
                                                 <label class="gl-label" for="login-email">E-MAIL *</label>
 
-                                                <input class="input-text input-text--primary-style" type="text" id="login-email" placeholder="Enter E-mail" method="post" action="<?php ($_SERVER["PHP_SELF"]);?>></div>
+                                                <input class="input-text input-text--primary-style" type="text" id="login-email" placeholder="Enter E-mail" method="post" ></div>
                                             <div class="u-s-m-b-30">
 
                                                 <label class="gl-label" for="login-password">PASSWORD *</label>
