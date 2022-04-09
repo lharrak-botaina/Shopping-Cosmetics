@@ -1,3 +1,5 @@
+<?php ?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -1490,7 +1492,7 @@
 
                                                 <label class="gl-label" for="reg-email">E-MAIL *</label>
 
-                                                <input class="input-text input-text--primary-style" type="text" id="reg-email" placeholder="Enter E-mail"></div>
+                                                <input class="input-text input-text--primary-style" type="text" id="reg-email" placeholder="Enter E-mail" ></div>
                                             <div class="u-s-m-b-30">
 
                                                 <label class="gl-label" for="reg-password">PASSWORD *</label>

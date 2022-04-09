@@ -1,10 +1,10 @@
 <?php
 
-$sname= "localhost";
-$unmae= "superuser";
+$hname= "localhost";
+$uname= "superootuser";
 $password = "p@ssword1";
 $db_name = "shoppingdb_production";
-$conn = mysqli_connect($sname, $unmae, $password, $db_name);
+$conn = mysqli_connect($hname, $uname, $password, $db_name);
 if (!$conn) {
 	echo "Connection failed!";
 }

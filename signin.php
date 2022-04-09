@@ -20,7 +20,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         header("Location: index.php?error=Password is required");
 	    exit();
 	}else{
-		// hashing the password, hell yeah md5 strongest shit ever invented. in hash we trust
+		// hashing the password, hellyeah! md5 strongest shit ever invented. in hash we trust
         $pass = md5($pass);
         //
 		$sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass'";
