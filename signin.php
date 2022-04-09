@@ -1,3 +1,54 @@
+<?php 
+session_start(); 
+include "db_conn.php";
+
+if (isset($_POST['email']) && isset($_POST['password'])) {
+	function validate($data){
+       $data = trim($data);
+	   $data = stripslashes($data);
+	   $data = htmlspecialchars($data);
+	   return $data;
+	}
+
+	$email = validate($_POST['email']);
+	$password = validate($_POST['password']);
+	// 
+	if (empty($uname)) {
+		header("Location: index.php?error=User Name is required");
+	    exit();
+	}else if(empty($pass)){
+        header("Location: index.php?error=Password is required");
+	    exit();
+	}else{
+		// hashing the password, hell yeah md5 strongest shit ever invented. in hash we trust
+        $pass = md5($pass);
+        //
+		$sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass'";
+		$result = mysqli_query($conn, $sql);
+
+		if (mysqli_num_rows($result) === 1) {
+			$row = mysqli_fetch_assoc($result);
+            if ($row['email'] === $uname && $row['password'] === $pass) {
+            	$_SESSION['username'] = $row['username'];
+            	$_SESSION['id'] = $row['id'];
+            	header("Location: home.php");
+		        exit();
+            }else{
+				header("Location: index.php?error=Incorect User name or password");
+		        exit();
+			}
+		}else{
+			header("Location: index.php?error=Incorect User name or password");
+	        exit();
+		}
+	}
+	
+}else{
+	header("Location: index.php");
+	exit();
+}
+?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -7,7 +58,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="images/favicon.png" rel="shortcut icon">
-    <title>Ludus - Electronics, Apparel, Computers, Books, DVDs & more</title>
+    <?php include('login.php') ?>
+    <title>Liquid Beauty.</title>
 
     <!--====== Google Font ======-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
@@ -1453,7 +1505,7 @@
 
                                                 <label class="gl-label" for="login-email">E-MAIL *</label>
 
-                                                <input class="input-text input-text--primary-style" type="text" id="login-email" placeholder="Enter E-mail"></div>
+                                                <input class="input-text input-text--primary-style" type="text" id="login-email" placeholder="Enter E-mail" method="post" action="<?php ($_SERVER["PHP_SELF"]);?>></div>
                                             <div class="u-s-m-b-30">
 
                                                 <label class="gl-label" for="login-password">PASSWORD *</label>
