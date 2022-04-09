@@ -82,7 +82,7 @@ $db->select_db("$dbname");
 
 </html>
 
-<!-- php quary section -->
+<!-- php query section -->
  <?php
  if(isset($_POST['login']))
  {
