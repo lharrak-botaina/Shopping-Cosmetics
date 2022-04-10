@@ -121,7 +121,7 @@ $db->select_db("$dbname");
    if(($username==$row[1])&&($password==$row[6])) //checking the username and password if right
    {
      $_SESSION['username']=$username;
-	 Header("location:index.html");
+	 Header("location:cart/index2.html");
    }
    else
    {

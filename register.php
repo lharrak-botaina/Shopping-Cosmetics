@@ -1,12 +1,9 @@
 
 <?php include 'config.php'; ?>
 <?php
-//database connection
 $db=new mysqli("$dbhost","$dbuser","$dbpass");
 $db->select_db("$dbname");
 ?>
-
-
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -59,7 +56,7 @@ $db->select_db("$dbname");
   <td colspan=2 style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
   auto;text-align:center'><b><span style='font-size:8.5pt;font-family:"Arial","sans-serif";
-  mso-fareast-font-family:"Times New Roman";color:black'>Registration</span></b></p>
+  mso-fareast-font-family:"Times New Roman";color:black'>Registration : </span></b></p>
   </td>
  </tr>
  <u1:p></u1:p>
@@ -67,7 +64,7 @@ $db->select_db("$dbname");
   <td style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
   style='font-size:8.5pt;font-family:"Arial","sans-serif";mso-fareast-font-family:
-  "Times New Roman";color:black'>User Name</span></b></p>
+  "Times New Roman";color:black'>UserName : </span></b></p>
   </td>
   <u1:p></u1:p>
   <td style='padding:.75pt .75pt .75pt .75pt'>
@@ -81,7 +78,7 @@ $db->select_db("$dbname");
   <td style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
   style='font-size:8.5pt;font-family:"Arial","sans-serif";mso-fareast-font-family:
-  "Times New Roman";color:black'>Email Adds</span></b><o:p></o:p></p>
+  "Times New Roman";color:black'>Email : </span></b><o:p></o:p></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
@@ -94,7 +91,7 @@ $db->select_db("$dbname");
   <td style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
   style='font-size:8.5pt;font-family:"Arial","sans-serif";mso-fareast-font-family:
-  "Times New Roman";color:black'>First Name</span></b><o:p></o:p></p>
+  "Times New Roman";color:black'>First Name : </span></b><o:p></o:p></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
@@ -107,7 +104,7 @@ $db->select_db("$dbname");
   <td style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
   style='font-size:8.5pt;font-family:"Arial","sans-serif";mso-fareast-font-family:
-  "Times New Roman";color:black'>Last Name</span></b><o:p></o:p></p>
+  "Times New Roman";color:black'>Last Name : </span></b><o:p></o:p></p>
   </td>
   <u1:p></u1:p>
   <td style='padding:.75pt .75pt .75pt .75pt'>
@@ -121,7 +118,7 @@ $db->select_db("$dbname");
   <td style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
   style='font-size:8.5pt;font-family:"Arial","sans-serif";mso-fareast-font-family:
-  "Times New Roman";color:black'>Country***</span></b><o:p></o:p></p>
+  "Times New Roman";color:black'>Adress : </span></b><o:p></o:p></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
@@ -130,7 +127,7 @@ $db->select_db("$dbname");
   </td>
  </tr>
  <u1:p></u1:p>
- <tr style='mso-yfti-irow:6'>
+ <!-- <tr style='mso-yfti-irow:6'>
   <td style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
   style='font-size:8.5pt;font-family:"Arial","sans-serif";mso-fareast-font-family:
@@ -141,7 +138,7 @@ $db->select_db("$dbname");
   style='font-size:9.0pt;font-family:"Arial","sans-serif";mso-fareast-font-family:
   "Times New Roman"'><INPUT TYPE="password" NAME="password"></span><o:p></o:p></p>
   </td>
- </tr>
+ </tr> -->
  <u1:p></u1:p>
  <u1:p></u1:p>
  <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
@@ -165,24 +162,49 @@ $db->select_db("$dbname");
 </html>
 <!-- code :p -->
 <?php
+
+$str=rand();
+$result = md5($str);
+$password = $result;
+
+
   if(isset($_POST['register']))
   {
    $name=$_POST['name'];
    $lname=$_POST['lname'];
    $email=$_POST['email'];
    $username=$_POST['username'];
-   $password=$_POST['password'];
    $country=$_POST['country'];
 // Query
    if ($db->query("INSERT INTO users
     (username,email,name,lname,country,password)
     VALUES ('$username','$email','$name','$lname','$country','$password')"))
-    print "<script>document.write('Account created :)');</script>";
-	
-	else {
-		echo 'Error :(';
-	}
+    print "<script>alert('Account created! check your email for verification.');</script>";
+    print "<script>document.write($password);</script>";
+    echo $password; 
+// 
+    $ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, 'https://api.mailgun.net/v3/sandbox742045923f1743df92c7c12c00baf699.mailgun.org/messages');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POST, 1);
+$post = array(
+    'from' => "Liquid Beauty",
+    'to' => $email,
+    'subject' => "Hello! Welcome to liquid beauty. ",
+    'text' => "Hello! you registred to Liquid beauty shopping website your temporary password is", $result,
+);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+curl_setopt($ch, CURLOPT_USERPWD, 'api' . ':' . '5ae619a82822e1579756bfee22002038-38029a9d-eacda5b2');
+
+$result = curl_exec($ch);
+if (curl_errno($ch)) {
+    echo 'Error:' . curl_error($ch);
+}
+curl_close($ch);
+
+
   }
+
 
  ?>
 
