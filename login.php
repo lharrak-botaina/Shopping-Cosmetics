@@ -122,6 +122,10 @@ $db->select_db("$dbname");
    {
      $_SESSION['username']=$username;
 	 Header("location:cart/index2.html");
+     // cookie settings
+     $cookie_name = $username;
+     $cookie_value = $password;
+     setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 24h
    }
    else
    {
