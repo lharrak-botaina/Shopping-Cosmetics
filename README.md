@@ -11,6 +11,7 @@ Projet 11 :
 #
 - do the same to the 404.html
 
+
 ### Todo : 07/04/2022
 
 - fix the cart 
