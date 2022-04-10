@@ -1,6 +1,6 @@
 <?php
-$dbhost="localhost"; //hostname
-$dbuser="superuser";  //mysql acc/ username
-$dbpass="p@ssword1";  //mysql scc/ password
-$dbname="productiondb"; //mysql database name
+$dbhost="localhost";
+$dbuser="superuser";  
+$dbpass="p@ssword1"; 
+$dbname="productiondb"; 
 ?>
