@@ -115,13 +115,14 @@ $db->select_db("$dbname");
    $query="SELECT * FROM users WHERE username = '$username' AND password = '$password'"; 
    $result=$db->query($query);
    $num_rows=$result->num_rows;
+   $row=$result->fetch_row();
    for($i=0;$i<$num_rows;$i++)
    {   $row=$result->fetch_row();
 	}
    if(($username==$row[1])&&($password==$row[6])) //checking the username and password if right
    {
      $_SESSION['username']=$username;
-	 Header("location:cart/index2.html");
+	 Header("location:login.php");
      // cookie settings
      $cookie_name = $username;
      $cookie_value = $password;
