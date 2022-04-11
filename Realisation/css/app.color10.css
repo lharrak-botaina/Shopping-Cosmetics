@@ -5513,10 +5513,10 @@ input::-ms-clear {
     padding: 28px 18px; }
 
 .ah-list--link-color-secondary > li > a {
-  color: #333333; }
+  color: #000000; }
 
 .ah-list--link-color-white > li > a {
-  color: #ffffff; }
+  color: #000000; }
 
 .ah-list--design2 > li {
   display: inline-block; }
