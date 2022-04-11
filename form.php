@@ -73,7 +73,7 @@ $db->select_db("$dbname");
 
                             <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Search">
 
-                            <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button></form>
+                            <button class="btn  btn--icon fas fa-search main-search-button"  style="margin: 10PX;" type="submit"></button></form>
                         <!--====== End - Search Form ======-->
 
 
@@ -203,7 +203,6 @@ $db->select_db("$dbname");
                         <!--====== Dropdown Main plugin ======-->
                         <div class="menu-init" id="navigation1">
 
-                            <button class="btn btn--icon toggle-mega-text toggle-button" type="button">M</button>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
@@ -1122,7 +1121,7 @@ $db->select_db("$dbname");
 
 
 
-    <div class="body">
+    <div class="body" style="background: #ffff;">
 		<div class="veen">
            
                 <div class="login-btn splits">
@@ -1358,7 +1357,7 @@ $db->select_db("$dbname");
 
                                             <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Enter your Email">
 
-                                            <button class="btn btn--e-brand newsletter__btn" type="submit">SUBSCRIBE</button></div>
+                                            <button class="btn btn--e-brand newsletter__btn" style="margin-top: 10PX; padding: 10px;" type="submit">SUBSCRIBE</button></div>
 
                                         <span class="newsletter__text">Subscribe to the mailing list to receive updates on promotions, new arrivals, discount and coupons.</span>
                                     </form>
