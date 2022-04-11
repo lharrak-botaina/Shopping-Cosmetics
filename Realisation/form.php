@@ -71,16 +71,13 @@ $db->select_db("$dbname");
 
                             <label for="main-search"></label>
 
-                            <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Search">
-
-                            <button class="btn  btn--icon fas fa-search main-search-button"  style="margin: 10PX;" type="submit"></button></form>
+                            </form>
                         <!--====== End - Search Form ======-->
 
 
                         <!--====== Dropdown Main plugin ======-->
                         <div class="menu-init" id="navigation">
 
-                            <button class="btn btn--icon toggle-button fas fa-cogs" type="button"></button>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
@@ -91,88 +88,27 @@ $db->select_db("$dbname");
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
                                     <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Account">
 
-                                        <a><i class="far fa-user-circle"></i></a>
 
                                         <!--====== Dropdown ======-->
 
                                         <span class="js-menu-toggle"></span>
-                                        <ul style="width:120px">
-                                            <li>
+                                        
 
-                                                <a href="dashboard.html"><i class="fas fa-user-circle u-s-m-r-6"></i>
+                                           
+                                        
+                                           
 
-                                                    <span>Account</span></a></li>
-                                            <li>
 
-                                                <a href="signup.html"><i class="fas fa-user-plus u-s-m-r-6"></i>
-
-                                                    <span>Signup</span></a></li>
-                                            <li>
-
-                                                <a href="signin.html"><i class="fas fa-lock u-s-m-r-6"></i>
-
-                                                    <span>Signin</span></a></li>
-                                            <li>
-
-                                                <a href="signup.html"><i class="fas fa-lock-open u-s-m-r-6"></i>
-
-                                                    <span>Signout</span></a></li>
-                                        </ul>
+                                              
                                         <!--====== End - Dropdown ======-->
                                     </li>
                                     <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Settings">
 
-                                        <a><i class="fas fa-user-cog"></i></a>
+                                        
 
                                         <!--====== Dropdown ======-->
 
-                                        <span class="js-menu-toggle"></span>
-                                        <ul style="width:120px">
-                                            <li class="has-dropdown has-dropdown--ul-right-100">
-
-                                                <a>Language<i class="fas fa-angle-down u-s-m-l-6"></i></a>
-
-                                                <!--====== Dropdown ======-->
-
-                                                <span class="js-menu-toggle"></span>
-                                                <ul style="width:120px">
-                                                    <li>
-
-                                                        <a class="u-c-brand">ENGLISH</a></li>
-                                                    <li>
-
-                                                        <a>ARABIC</a></li>
-                                                    <li>
-
-                                                        <a>FRANCAIS</a></li>
-                                                    <li>
-
-                                                        <a>ESPANOL</a></li>
-                                                </ul>
-                                                <!--====== End - Dropdown ======-->
-                                            </li>
-                                            <li class="has-dropdown has-dropdown--ul-right-100">
-
-                                                <a>Currency<i class="fas fa-angle-down u-s-m-l-6"></i></a>
-
-                                                <!--====== Dropdown ======-->
-
-                                                <span class="js-menu-toggle"></span>
-                                                <ul style="width:225px">
-                                                    <li>
-
-                                                        <a class="u-c-brand">$ - US DOLLAR</a></li>
-                                                    <li>
-
-                                                        <a>£ - BRITISH POUND STERLING</a></li>
-                                                    <li>
-
-                                                        <a>€ - EURO</a></li>
-                                                </ul>
-                                                <!--====== End - Dropdown ======-->
-                                            </li>
-                                        </ul>
-                                        <!--====== End - Dropdown ======-->
+                                       
                                     </li>
                                     <li data-tooltip="tooltip" data-placement="left" title="Contact">
 
@@ -213,7 +149,7 @@ $db->select_db("$dbname");
                                 <ul class="ah-list">
                                     <li class="has-dropdown">
 
-                                        <span class="mega-text">M</span>
+                                        
 
                                         <!--====== Mega Menu ======-->
 
@@ -945,7 +881,7 @@ $db->select_db("$dbname");
 
                             <button class="btn btn--icon toggle-button fas fa-shopping-bag toggle-button-shop" type="button"></button>
 
-                            <span class="total-item-round">2</span>
+                            
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
@@ -956,15 +892,11 @@ $db->select_db("$dbname");
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
                                     <li>
 
-                                        <a href="index.html"><i class="fas fa-home"></i></a></li>
-                                    <li>
+                                      
+                                   
+                                   
 
-                                        <a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                    <li class="has-dropdown">
-
-                                        <a class="mini-cart-shop-link"><i class="fas fa-shopping-bag"></i>
-
-                                            <span class="total-item-round">2</span></a>
+                                          
 
                                         <!--====== Dropdown ======-->
 
@@ -1308,12 +1240,10 @@ $db->select_db("$dbname");
                                             <span class="outer-footer__content-title">Information : </span>
                                             <div class="outer-footer__list-wrap">
                                                 <ul>
+                                                    
                                                     <li>
 
-                                                        <a href="register.php">register</a></li>
-                                                    <li>
-
-                                                        <a href="login.php">login</a></li>
+                                                        <a href="form.php">Account</a></li>
                                                     <li>
 
                                                         <a href="index.html#">Go back</a></li>
