@@ -92,6 +92,7 @@ class GestionProduit {
                 $produit->setId($value['id']);
                 $produit->setNom($value['Name']);
                 $produit->setPrix($value['price']);
+                
                
                 array_push($TableData, $produit);
             }
