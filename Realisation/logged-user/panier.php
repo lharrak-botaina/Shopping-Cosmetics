@@ -4,9 +4,7 @@ session_start();
 // print_r($_SESSION["paniers"]);
 
 include 'gestionProduit.php';
-
 $gestionProduit = new GestionProduit();
-
 $listProduits = $gestionProduit->getPanier();
 
 

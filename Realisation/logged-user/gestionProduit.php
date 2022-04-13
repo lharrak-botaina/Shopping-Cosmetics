@@ -7,16 +7,11 @@ include "produit.php";
 class GestionProduit {
 
     public $name ;
-
     private $Connection = Null;
-
     private function getConnection(){
       
             $this->Connection = mysqli_connect('localhost', 'superuser', 'p@ssword1', 'productiondb');
-           
-         
-       
-        
+
         return $this->Connection;
     }
 
