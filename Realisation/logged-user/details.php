@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -1162,7 +1161,8 @@
                             <div class="pd u-s-m-b-30">
                                 <div class="slider-fouc pd-wrap">
                                     <div id="pd-o-initiate">
-                                        <div class="pd-o-img-wrap" data-src="images/product/product-d-1.jpg">
+      
+                                        <div class="pd-o-img-wrap"  data-src=../<?=$value["image_dir"]?>>
 
                                             <img class="u-img-fluid" src="images/product/product-d-1.jpg" data-zoom-image="images/product/product-d-1.jpg" alt=""></div>
                                         <div class="pd-o-img-wrap" data-src="images/product/product-d-2.jpg">
@@ -1178,7 +1178,7 @@
 
                                             <img class="u-img-fluid" src="images/product/product-d-5.jpg" data-zoom-image="images/product/product-d-5.jpg" alt=""></div>
                                     </div>
-
+                                
                                     <span class="pd-text">Click for larger zoom</span>
                                 </div>
                                 <div class="u-s-m-t-15">
