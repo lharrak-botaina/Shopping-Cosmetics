@@ -64,7 +64,7 @@ class GestionProduit {
         foreach ($produits_data as $value_Data) {
             $produit = new Produit();
             $produit->setId($value_Data['id']);
-            $produit->setNom($value_Data['Nom']);
+            $produit->setNom($value_Data['Name']);
            
             array_push($TableData, $produit);
         }
@@ -87,6 +87,7 @@ class GestionProduit {
                 $produit->setId($value['id']);
                 $produit->setNom($value['Name']);
                 $produit->setPrix($value['price']);
+                $produit->setImage_dir($value['image_dir']);
                 
                
                 array_push($TableData, $produit);

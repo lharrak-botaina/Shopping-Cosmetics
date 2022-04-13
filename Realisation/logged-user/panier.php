@@ -29,9 +29,13 @@ $listProduits = $gestionProduit->getPanier();
             <tr >
                 
                 <td><?= $value["id"] ?></td>
-                <td><?= $value["nom"] ?></td>
-                <td><?= $value["prix"] ?> dh</td>
-                <td><?= $value["qnt"] ?></td>
+                <td><?= $value["Name"] ?></td>
+                <td><?= $value["price"] ?> dh</td>
+                <td><?= $value["image_dir"] ?></td>
+                <img src=../<?=$value["image_dir"]?> >
+
+                
+             
                 <td>
                   <a href="modifier.php?id=<?= $value["id"] ?>">modifier</a>
                   <a href="supprimer.php?id=<?= $value["id"] ?>">supprimer</a>
