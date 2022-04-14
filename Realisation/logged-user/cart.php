@@ -1517,13 +1517,6 @@ $compteur = count($_SESSION["paniers"]["products"]) ;
                                             <span>CONTINUE SHOPPING</span></a></div>
                                     <div class="route-box__g2">
 
-                                        <a class="route-box__link" href="cart.html"><i class="fas fa-trash"></i>
-
-                                            <span>CLEAR CART</span></a>
-
-                                        <a class="route-box__link" href="cart.html"><i class="fas fa-sync"></i>
-
-                                            <span>UPDATE CART</span></a></div>
                                 </div>
                             </div>
                         </div>
