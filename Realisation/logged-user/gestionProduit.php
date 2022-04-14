@@ -51,8 +51,8 @@ class GestionProduit {
     
     // pour afficher  session 
     public function getProduit($id){
-        if(isset($_SESSION["paniers"]["produits"][$id])){
-            return $_SESSION["paniers"]["produits"][$id];
+        if(isset($_SESSION["paniers"]["products"][$id])){
+            return $_SESSION["paniers"]["products"][$id];
             return null ; 
         }
     }

@@ -6,9 +6,7 @@ $id=$_POST['id'];
 
 
 $data = $gestionProduit->afficherProduit($id);
-
 foreach($data as $value);
-
 
 $valeurs = array(
     "nom" => $value->getNom(),
