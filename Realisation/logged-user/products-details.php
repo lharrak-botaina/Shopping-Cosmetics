@@ -15,14 +15,13 @@ foreach($data as $value){
 ?>
    <h1><?= $value->getNom();?></h1>
    <p> Prix:<?= $value->getPrix();?></p>
-   
    <?php 
 }
 ?>
 
 <form action="ajouter.php" method="POST">
 <p>
-<label for="">Quentity : </label>
+<label for=""> Quntite</label>
 <input type="number" name="qnt" >
 </p>
 <p>

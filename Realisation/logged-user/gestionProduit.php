@@ -7,11 +7,16 @@ include "produit.php";
 class GestionProduit {
 
     public $name ;
+
     private $Connection = Null;
+
     private function getConnection(){
       
             $this->Connection = mysqli_connect('localhost', 'superuser', 'p@ssword1', 'productiondb');
-
+           
+         
+       
+        
         return $this->Connection;
     }
 
@@ -22,15 +27,15 @@ class GestionProduit {
     
     // pour ajouter session
     public function set($key,$value){
-        $_SESSION["paniers"]["produits"][$key] = $value ;
+        $_SESSION["paniers"]["products"][$key] = $value ;
 
     }
 
       // afficher session
 
       public function getPanier(){
-        if(isset($_SESSION["paniers"]["produits"])){
-            return $_SESSION["paniers"]["produits"];
+        if(isset($_SESSION["paniers"]["products"])){
+            return $_SESSION["paniers"]["products"];
             return array();
         }
 
@@ -38,8 +43,8 @@ class GestionProduit {
 
           //supprimer session
     public function delete($id){
-        if(isset($_SESSION["paniers"]["produits"][$id])){
-            unset($_SESSION["paniers"]["produits"][$id]);
+        if(isset($_SESSION["paniers"]["products"][$id])){
+            unset($_SESSION["paniers"]["products"][$id]);
         }
     }
 
@@ -87,8 +92,6 @@ class GestionProduit {
                 $produit->setId($value['id']);
                 $produit->setNom($value['Name']);
                 $produit->setPrix($value['price']);
-                $produit->setImage_dir($value['image_dir']);
-                
                
                 array_push($TableData, $produit);
             }

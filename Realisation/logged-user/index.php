@@ -13,7 +13,7 @@ foreach($data as $value){
 <tr>
 
 <td>
-    <a href="detail de produit.php?id=<?= $value->getId();?>">
+    <a href="products-details.php?id=<?= $value->getId();?>">
 <?= $value->getNom();?></a> </td>
 </tr>
 

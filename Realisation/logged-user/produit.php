@@ -5,15 +5,6 @@ class Produit{
     private $Nom ; 
     private $Prix ; 
     private $id ; 
-    private $image_dir;
-
-      
-    public function getImage_dir() {
-        return $this->Image_dir;
-    }
-    public function setImage_dir($Image_dir) {
-        $this->Image_dir = $Image_dir;
-    }
 
     
     public function getNom() {

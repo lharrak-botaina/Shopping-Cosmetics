@@ -11,10 +11,10 @@ foreach($data as $value);
 
 
 $valeurs = array(
-    "Name" => $value->getNom(),
-    'price' => $value->getPrix(),
+    "nom" => $value->getNom(),
+    'prix' => $value->getPrix(),
+    'qnt' => $_POST["qnt"] ,
     'id' => $value->getId(),
-    "image_dir"=>$value->getImage_dir(),
 );
 $gestionProduit->set( $_POST["id"], $valeurs);
 
