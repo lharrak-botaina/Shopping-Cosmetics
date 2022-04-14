@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 12 avr. 2022 à 02:37
--- Version du serveur : 10.4.24-MariaDB
--- Version de PHP : 7.4.28
+-- Généré le : lun. 11 avr. 2022 à 13:39
+-- Version du serveur : 10.4.22-MariaDB
+-- Version de PHP : 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -66,30 +66,11 @@ CREATE TABLE `category` (
 CREATE TABLE `products` (
   `id` int(255) NOT NULL,
   `Name` varchar(255) NOT NULL,
-  `price` float NOT NULL,
+  `price` decimal(10,0) NOT NULL,
   `Description_product` varchar(255) NOT NULL,
   `supply` varchar(255) NOT NULL,
-  `Assignment_Category` varchar(255) NOT NULL,
-  `image_dir` varchar(255) NOT NULL
+  `Assignment_Category` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Déchargement des données de la table `products`
---
-
-INSERT INTO `products` (`id`, `Name`, `price`, `Description_product`, `supply`, `Assignment_Category`, `image_dir`) VALUES
-(2, 'Collagen & Hyaluronic Acid Ampoule', 0, 'Contains Marine Collagen and Hyaluronic Acid to improve skin elasticity and provide deep hydration to skin.', '2', 'Moisturizer', 'images/product/women/ampoule.webp'),
-(3, 'Hydro Boost Hydrating Cleansing Gel', 0, 'Neutrogena® Hydro Boost Hydrating Cleansing Gel boosts hydration for soft, supple skin. This lightweight gel cleanser transforms into a silky lather that effectively removes makeup and impurities. With hyaluronic acid.', '3', 'Facial Cleanser', 'images/product/women/Neutrogena Hydro Boost Water Gel Facial Cleanser for Dry or Dehydrated Skin 200ml.jfif'),
-(4, 'Farm Stay Escargot Noblesse Intensive Skin Care', 0, 'This Escargot Noblesse Intensive Skin Care 3 Set consists of a Toner (150ml), Intensive Cream (50ml),\r\nand an Intensive Emulsion (150ml), all of which contain amazing extracts from escargots fuond in nature that gives the skin a rich moisture boost.\r\nThis', '4', 'Skincare game', 'Farmstay Escargot Noblesse Lntensive Skin Care 5 Set.jfif'),
-(6, 'O2 Premium Aqua Foam Cleansing', 0, 'Farmstay O2 Premium Aqua Foam Cleansing\r\nIt is an aqua foam cleansing that softens the skin burden and abundant foam removes even impurities in the pores, keeping the skin soft and refreshing.\r\nFarmstay O2 Premium Aqua Foam Cleansing', '5', 'Facial Cleanser', 'images/product/women/Foam Farmstay O2 premium AQUA.jfif'),
-(7, 'CeraVe Foaming Facial', 0, 'Dispenses as a clear gel cleanser and transforms into a foam as you lather. Cleanses without leaving skin feeling tight, dry, or stripped.\r\nCleanser for face, can also be used on the body and/or hands. Suitable for normal to oily skin.', '6', 'Facial Cleanser', 'images/product/women/CeraVe Rosto & Corpo.jfif'),
-(8, 'La Roche-Posay Cleanser', 0, 'Value size. Gel face wash for oily skin tested on acne-prone skin. Gently cleanses impurities while respecting skin\'s pH balance. Oil-free, soap free, formula with Zinc Pidolate to purify skin. Packaging may vary.', '7', 'Facial Cleanser', 'images/product/women/La Roche-Posay Effaclar.jfif'),
-(9, 'Eucerin Hand Cream', 0, 'Repairs Rough Skin: Eucerin Advanced Repair unscented hand cream helps to repair dry, rough skin on the hands.\r\nFast Absorbing Formula: This dry skin hand cream is fast-absorbing and non-greasy, and leaves hands noticeably smoother after just one use.', '8', 'Hand Cream', 'images/product/women/12.webp'),
-(10, 'Farm Stay - Tropical Fruit Hand Cream Mango & Shea Butter', 0, 'his hand cream moisturizes and nourishes dry skin with 5 kinds of fruit ingredients providing skin with long-lasting hydration.\r\nLeaves a moisturizing and refreshing finish without any stickiness.\r\nComes in a small 50ml size that is convenient to carry ar', '9', 'Hand Cream', 'images/product/women/hand-cream.webp'),
-(11, 'Collagen & Hyaluronic Acid Ampoule', 0, 'Contains Marine Collagen and Hyaluronic Acid to improve skin elasticity and provide deep hydration to skin.', '10', 'Moisturizer', 'images/product/women/ampoule.webp'),
-(12, 'Aloe Vera Moisture Soothing Gel', 0, '- Skin Anti-aging, Moisture supply, Long moisturizing, Zero stickiness\r\n- Aloe Vera Leaf Extract 100%\r\n- PGA content of natural fermentation\r\n-Aloe vera leaf extract called God\'s gift moisturizes the bee and is effective for sterilization and anti-inflamm', '11', 'Moisturizer', 'images/product/women/téléchargement (10).jfif'),
-(13, 'Collagen Water Full Moist Toner', 0, 'A toner that helps maintaining skin elasticity with Hydrolyzed Collagen and Flower Extracts with a non-sticky, refreshing finish.\r\nSoothes the irritated skin during cleansing.\r\nDelivers moisture to skin quickly and minimizes tightening feelings after clea', '12', 'Toner', 'Farm-Stay-Collagen-Water-Full-Moist-Toner_1.jpg'),
-(14, 'The Ordinary Glycolic Acid 7% Toning', 0, 'Glycolic Acid is an alpha hydroxy acid that exfoliates the skin. This 7% toning solution offers mild exfoliation for improved skin radiance and visible clarity. The formula also improves the appearance of skin texture with continued use.', '13', 'Toner', 'images/product/women/Glycolic acid (1).jfif');
 
 -- --------------------------------------------------------
 
@@ -220,7 +201,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT pour la table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT pour la table `users`
