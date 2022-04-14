@@ -11,7 +11,7 @@ foreach($data as $value);
 $valeurs = array(
     "Name" => $value->getNom(),
     'price' => $value->getPrix(),
-    //  
+      
     'id' => $value->getId(),
 );
 $gestionProduit->set( $_POST["id"], $valeurs);
