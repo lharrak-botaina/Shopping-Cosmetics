@@ -1,6 +1,7 @@
-<?php 
+<?php
+session_start();
 
-
+$compteur = count($_SESSION["paniers"]["products"]) ;
 ?>
 
 <!DOCTYPE html>
@@ -1224,7 +1225,7 @@
 
                                         <a class="mini-cart-shop-link"><i class="fas fa-shopping-bag"></i>
 
-                                            <span class="total-item-round">2</span></a>
+                                            <span class="total-item-round"><?php echo $compteur ?></span></a>
 
                                         <!--====== Dropdown ======-->
 
@@ -1416,7 +1417,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section__text-wrap">
-                                    <h1 class="section__heading u-c-secondary">SHOPPING CART</h1>
+                                    <h1 class="section__heading u-c-secondary">SHOPPING CART : </h1>
                                 </div>
                             </div>
                         </div>
@@ -1440,7 +1441,23 @@
                                             </tr>
                                             <!--====== End - Row ======-->
 
+                                            <?php 
+                        
 
+                        // print_r($_SESSION["paniers"]);
+
+                         include 'gestionProduit.php';
+
+                          $gestionProduit = new GestionProduit();
+
+                         $listProduits = $gestionProduit->getPanier();
+                    ?>
+
+         <?php
+               foreach($listProduits as $value){
+       
+
+             ?>
                                             <!--====== Row ======-->
                                             <tr>
                                                 <td>
@@ -1452,25 +1469,18 @@
 
                                                             <span class="table-p__name">
 
-                                                                <a href="product-detail.html">New Fashion D Nice Elegant</a></span>
+                                                                <a href="detail.php"><?= $value["Name"] ?></a></span>
+                                                                <div class="col"><?= $value["price"] ?> DH </div>
 
                                                             <span class="table-p__category">
-
-                                                                <a href="shop-side-version-2.html">Men Clothing</a></span>
                                                             <ul class="table-p__variant-list">
-                                                                <li>
-
-                                                                    <span>Size: 22</span></li>
-                                                                <li>
-
-                                                                    <span>Color: Red</span></li>
+                                                                
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
 
-                                                    <span class="table-p__price">$125.00</span></td>
                                                 <td>
                                                     <div class="table-p__input-counter-wrap">
 
@@ -1485,12 +1495,14 @@
                                                         <!--====== End - Input Counter ======-->
                                                     </div>
                                                 </td>
+                                               
                                                 <td>
                                                     <div class="table-p__del-wrap">
 
-                                                        <a class="far fa-trash-alt table-p__delete-link" href="#"></a></div>
+                                                        <a class=" close far fa-trash-alt table-p__delete-link" href="supprimer.php?id=<?= $value["id"] ?>"></a></div>
                                                 </td>
                                             </tr>
+                                            <?php } ?>
                                             <!--====== End - Row ======-->
                                         </tbody>
                                     </table>

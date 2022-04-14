@@ -9,9 +9,9 @@ $data = $gestionProduit->afficherProduit($id);
 foreach($data as $value);
 
 $valeurs = array(
-    "nom" => $value->getNom(),
-    'prix' => $value->getPrix(),
-    'qnt' => $_POST["qnt"] ,
+    "Name" => $value->getNom(),
+    'price' => $value->getPrix(),
+    //  
     'id' => $value->getId(),
 );
 $gestionProduit->set( $_POST["id"], $valeurs);

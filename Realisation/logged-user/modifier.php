@@ -9,8 +9,8 @@ $value = $gestion->getProduit($_GET["id"]);
 
 ?>
 
-<h1><?=$value['nom'];?></h1>
-<p> Prix:<?=  $value['prix']; ?> dh</p>
+<h1><?=$value['Name'];?></h1>
+<p> Prix:<?=  $value['price']; ?> dh</p>
 
 
 <form action="ajouter.php" method="POST">
