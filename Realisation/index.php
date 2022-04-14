@@ -855,7 +855,7 @@
                                 <div class="product-r u-h-100">
                                     <div class="product-r__container">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/products-details.php?id=2">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/detail.php?id=2">
 
                                             <img class="aspect__img" src="images/product/women/ampoule.webp" alt=""></a>
                                         <div class="product-r__action-wrap">
@@ -896,7 +896,7 @@
                                 <div class="product-r u-h-100">
                                     <div class="product-r__container">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/detail.php?id=3">
 
                                             <img class="aspect__img" src="images/product/women/Neutrogena Hydro Boost Water Gel Facial Cleanser for Dry or Dehydrated Skin 200ml.jfif" alt=""></a>
                                         <div class="product-r__action-wrap">
@@ -937,7 +937,7 @@
                                 <div class="product-r u-h-100">
                                     <div class="product-r__container">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/detail.php?id=4">
 
                                             <img class="aspect__img" src="images/product/women/Farmstay Escargot Noblesse Lntensive Skin Care 5 Set.jfif" alt=""></a>
                                         <div class="product-r__action-wrap">
@@ -978,7 +978,7 @@
                                 <div class="product-r u-h-100">
                                     <div class="product-r__container">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/detail.php?id=6">
 
                                             <img class="aspect__img" src="images/product/women/Foam Farmstay O2 premium AQUA.jfif" alt=""></a>
                                         <div class="product-r__action-wrap">
@@ -1019,7 +1019,7 @@
                                 <div class="product-r u-h-100">
                                     <div class="product-r__container">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/detail.php?id=7">
 
                                             <img class="aspect__img" src="images/product/men/product5.jpg" alt=""></a>
                                         <div class="product-r__action-wrap">
@@ -1060,7 +1060,7 @@
                                 <div class="product-r u-h-100">
                                     <div class="product-r__container">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/detail.php?id=8">
 
                                             <img class="aspect__img" src="images/product/men/product6.jpg" alt=""></a>
                                         <div class="product-r__action-wrap">
@@ -1101,7 +1101,7 @@
                                 <div class="product-r u-h-100">
                                     <div class="product-r__container">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/detail.php?id=9">
 
                                             <img class="aspect__img" src="images/product/men/product7.jpg" alt=""></a>
                                         <div class="product-r__action-wrap">
@@ -1142,7 +1142,7 @@
                                 <div class="product-r u-h-100">
                                     <div class="product-r__container">
 
-                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/detail.php?id=10">
 
                                             <img class="aspect__img" src="images/product/men/product8.jpg" alt=""></a>
                                         <div class="product-r__action-wrap">
@@ -1255,7 +1255,7 @@
                                                 <div class="product-bs__container">
                                                     <div class="product-bs__wrap">
 
-                                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/detail.php?id=11">
 
                                                             <img class="aspect__img" src="images/product/women/CeraVe Rosto & Corpo.jfif" alt=""></a>
                                                         <div class="product-bs__action-wrap">
@@ -1298,7 +1298,7 @@
                                                 <div class="product-bs__container">
                                                     <div class="product-bs__wrap">
 
-                                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/detail.php?id=12">
 
                                                             <img class="aspect__img" src="images/product/women/La Roche-Posay Effaclar.jfif" alt=""></a>
                                                         <div class="product-bs__action-wrap">
@@ -1341,7 +1341,7 @@
                                                 <div class="product-bs__container">
                                                     <div class="product-bs__wrap">
 
-                                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/detail.php?id=13">
 
                                                             <img class="aspect__img" src="images/product/women/12.webp" alt=""></a>
                                                         <div class="product-bs__action-wrap">
@@ -1384,7 +1384,7 @@
                                                 <div class="product-bs__container">
                                                     <div class="product-bs__wrap">
 
-                                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                        <a class="aspect aspect--bg-grey aspect--square u-d-block" href="logged-user/detail.php?id=14">
 
                                                             <img class="aspect__img" src="images/product/women/hand-cream.webp" alt=""></a>
                                                         <div class="product-bs__action-wrap">
