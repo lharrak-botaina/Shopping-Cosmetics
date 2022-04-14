@@ -131,15 +131,14 @@
                                                 </li>
                                                 <li class="has-dropdown has-dropdown--ul-right-100">
 
-                                                    <a>Currency<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+                                                    <a>Access.<i class="fas fa-angle-down u-s-m-l-6"></i></a>
 
                                                     <!--====== Dropdown ======-->
 
                                                     <span class="js-menu-toggle"></span>
                                                     <ul style="width:225px">
                                                         <li>
-
-                                                            <a class="u-c-brand">only $ - US DOLLAR supported</a></li>
+                                                            <a class="u-c-brand" href="admin/login.php">Login to Admin Panel </a></li>
                                                         <li>
 
                                                             <!-- <a>MAD - MOROCCAN DIRHAM </a></li>
@@ -746,7 +745,7 @@
 
                                                 <span class="u-c-brand">$10.00</span></span>
 
-                                            <a class="shop-now-link btn--e-brand" href="register.php">SHOP NOW</a></div>
+                                            <a class="shop-now-link btn--e-brand" href="form.php">SHOP NOW</a></div>
                                     </div>
                                 </div>
                             </div>
