@@ -17,6 +17,6 @@ $valeurs = array(
 $gestionProduit->set( $_POST["id"], $valeurs);
 
 
-header("location: panier.php");
+header("location: panier-2.php");
 
 

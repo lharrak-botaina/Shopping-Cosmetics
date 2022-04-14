@@ -1295,7 +1295,7 @@ foreach($data as $value){
                                     </ul>
                                 </div>
                                 <div class="u-s-m-b-15">
-                                    <form class="pd-detail__form">
+                                    <form  action="ajouter.php" method="POST" class="pd-detail__form">
                                         <div class="pd-detail-inline-2">
                                             <div class="u-s-m-b-15">
 
@@ -1309,7 +1309,8 @@ foreach($data as $value){
                                                     <span class="input-counter__plus fas fa-plus"></span></div>
                                                 <!--====== End - Input Counter ======-->
                                             </div>
-                                            <div class="u-s-m-b-15">
+                                            <div  class="u-s-m-b-15">
+                                            <input type="hidden" name="id" value="<?=  $value->getId() ?>">
 
                                                 <button class="btn btn--e-brand-b-2" type="submit">Add to Cart</button></div>
                                         </div>
@@ -1661,7 +1662,7 @@ foreach($data as $value){
 
                                                         <span class="input-counter__minus fas fa-minus"></span>
 
-                                                        <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000">
+                                                        <input  name="qnt"  class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000">
 
                                                         <span class="input-counter__plus fas fa-plus"></span></div>
                                                     <!--====== End - Input Counter ======-->
