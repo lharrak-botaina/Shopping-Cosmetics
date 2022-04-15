@@ -30,16 +30,16 @@ include "db.php";
             <textarea name="price" rows="2" class="form-control" placeholder="Price"></textarea>
           </div>
           <div class="form-group">
-            <textarea name="supply" rows="2" class="form-control" placeholder="Supply"></textarea>
+            <textarea name="category_product" rows="2" class="form-control" placeholder="Category"></textarea>
           </div>
           <!-- Categories Select -->
-<select class="form-select" aria-label="Default select example" name="Assignment_Category">
-  <option selected>Prodcut Categories</option>
-  <option value="Facial Cleanser" >Facial Cleanser</option>
-  <option value="Hand Cream" >Hand Cream</option>
-  <option value="Toner">Toner</option>
-  <option value="Moisturizer">Moisturizer</option>
-</select>
+          <select class="form-select" aria-label="Default select example" name="Assignment_Category">
+            <option selected>Prodcut Categories</option>
+            <option value="Facial Cleanser" >Facial Cleanser</option>
+            <option value="Hand Cream" >Hand Cream</option>
+            <option value="Toner">Toner</option>
+            <option value="Moisturizer">Moisturizer</option>
+          </select>
           <br> 
           <!-- Button -->
           <input type="submit" name="add_product" class="btn btn-success btn-block" value="Add Product!">
@@ -56,6 +56,8 @@ include "db.php";
             <th>Description_product</th>
             <th>Category</th>
             <th>Assignment_Category</th>
+            <th>Action</th>
+
           </tr>
         </thead>
         <tbody>
@@ -72,12 +74,14 @@ include "db.php";
             <td><?php echo $row['category_product']; ?></td>
 
             <td><?php echo $row['Assignment_Category']; ?></td>
+
+
           </tr>
-              <!-- <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
+             <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
                 <i class="fas fa-marker"></i>
-              </a>
-              <a href="delete_task.php?id=<?php echo $row['id']?>" class="btn btn-danger">
-                <i class="far fa-trash-alt"></i> -->
+              </a> 
+              <!-- <a href="delete_task.php?id=<?php echo $row['id']?>" class="btn btn-danger">
+                <i class="far fa-trash-alt"></i>  -->
               </a>
             </td>
           </tr>
