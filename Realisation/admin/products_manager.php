@@ -70,7 +70,6 @@ include "db.php";
             <td><?php echo $row['price']; ?> dh</td>
             <td><?php echo $row['Description_product']; ?></td>
             <td><?php echo $row['category_product']; ?></td>
-
             <td><?php echo $row['Assignment_Category']; ?></td>
           </tr>
               <!-- <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
