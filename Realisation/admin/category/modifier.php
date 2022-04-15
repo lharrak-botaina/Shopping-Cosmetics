@@ -15,11 +15,10 @@ if(isset($_GET['id'])){
 
 // modifier les donnes
 if(!empty($_POST)){
-    $photo = $_FILES["image"]["name"];
    
 	$produit = new produit_categorie();
 	$produit->setId_Produit($_POST['id']);
-	$produit->setNom_Produit($_POST['nom_produit']);
+	$produit->setNom_Produit($_POST['Name']);
 	$produit->setPrix($_POST['price']);
 	$produit->setDescription($_POST['Description_pruduct']);
 	$produit->setCategorie_produit($_POST['category_product']);
@@ -27,18 +26,18 @@ if(!empty($_POST)){
 	// $produit->setDate_dexpiration($_POST["date_d'expiration"]);
 	$produit->setPhoto($photo);
 
-  $tempname = $_FILES["image"]["tmp_name"];
+  // $tempname = $_FILES["image"]["tmp_name"];
 
-    if(!empty($photo)){
+  //   if(!empty($photo)){
      
       
-      $gestion->upload_photo($photo, $tempname);
-  } else {
-    $produit->setPhoto($value->getPhoto());
-  }
+  //     $gestion->upload_photo($photo, $tempname);
+  // } else {
+  //   $produit->setPhoto($value->getPhoto());
+  // }
   
     $gestion->Modifier($produit);
-    header('Location: table.php');
+    header('Location: index.php');
 } 
 ?>
 
@@ -226,7 +225,7 @@ if(!empty($_POST)){
                     </select>
                   </div>
                   <div class="row">
-                      <div class="form-group mb-3 col-xs-12 col-sm-6">
+                      <!-- <div class="form-group mb-3 col-xs-12 col-sm-6">
                           <label
                             for="expire_date"
                             >Expiration Date
@@ -237,10 +236,10 @@ if(!empty($_POST)){
                             type="date"
                             class="form-control validate"
                             data-large-mode="true"
-                            value="<?php echo $value->getDate_dexpiration() ?>"
+                            value="<?php  ?>"
                           />
-                        </div>
-                        <div class="form-group mb-3 col-xs-12 col-sm-6">
+                        </div> -->
+                        <!-- <div class="form-group mb-3 col-xs-12 col-sm-6">
                           <label
                             for="stock"
                             >Quantite de stock
@@ -251,15 +250,15 @@ if(!empty($_POST)){
                             type="text"
                             class="form-control validate"
                             required
-                            value="<?php echo $value->getQuantite_stock() ?>"
+                            value="<?php  ?>"
                           />
-                        </div>
+                        </div> -->
                   </div>
                   
               </div>
               <div class="col-xl-6 col-lg-6 col-md-12 ">
                 <div class=" mx-auto">
-                <img src="./img/<?php echo $value->getPhoto()?>" class="tm-product-img-dummy mx-auto" alt="">
+                <!-- <img src="./img/<?php ?>" class="tm-product-img-dummy mx-auto" alt=""> -->
                 </div>
                 <div class="custom-file mt-3 mb-3">
                   
