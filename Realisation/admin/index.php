@@ -279,7 +279,7 @@ include "db.php";
                                     <a href="products_manager.php">Products Manager</a>
                                 </li>
                                 <li>
-                                    <a href="flot.html">Flot Charts</a>
+                                    <a href="../admin/category/">Categorie Manager</a>
                                 </li>
                                 <li>
                                     <a href="morris.html">Morris.js Charts</a>
