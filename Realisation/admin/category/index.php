@@ -93,7 +93,7 @@
               <ul  class="list-unstyled navbar__list">
                      
                     <a href="../index.php">
-                    <i class="far fa-arrow-right-from-bracket"></i>Logout</a>
+                    <i class="far fa-arrow-right-from-bracket"></i>Dashboard</a>
                         
                     
              </ul>

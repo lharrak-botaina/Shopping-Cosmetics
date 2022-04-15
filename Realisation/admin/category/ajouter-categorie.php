@@ -29,7 +29,7 @@ if(!empty($_POST)){
 	$gestion->ajouterCategorie($categorie);
 	
 	// Redirection vers la page index.php
-	header("Location: table.php");
+	header("Location: index.php");
 }
 ?>
 
