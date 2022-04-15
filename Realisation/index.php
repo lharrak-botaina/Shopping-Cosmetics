@@ -1090,7 +1090,6 @@ include "db.php";
           $result_tasks = mysqli_query($conn, $query);    
           while($row = mysqli_fetch_assoc($result_tasks)) { ?>
           <ul>
-            <li><?php echo $row['id']; ?></p>
             <li ><?php echo $row['Name']; ?></li>
             <li><?php echo $row['price']; ?> dh</li>
             <a href="logged-user/detail.php?id=<?php echo $row['id']; ?>">Buy</a>
