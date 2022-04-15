@@ -1,3 +1,6 @@
+<?php
+include "db.php"; 
+?>
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -1068,7 +1071,32 @@
           </tr>
           <?php } ?>
 
-          
+          <div class="section__intro u-s-m-b-16">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section__text-wrap">
+                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">Products : </h1>
+                                    <span class="section__span u-c-silver u-s-m-b-16">Shop Products :  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <?php
+                
+          $query = "SELECT * FROM products";
+          $result_tasks = mysqli_query($conn, $query);    
+          while($row = mysqli_fetch_assoc($result_tasks)) { ?>
+          <ul>
+            <li><?php echo $row['id']; ?></p>
+            <li ><?php echo $row['Name']; ?></li>
+            <li><?php echo $row['price']; ?> dh</li>
+            <a href="logged-user/detail.php?id=<?php echo $row['id']; ?>">Buy</a>
+            <!-- href="logged-user/detail.php?id=2 -->
+          </ul>
+          <?php } ?>
                 <!--====== End - Section Intro ======-->
 
 
