@@ -197,9 +197,9 @@
 
                                 <!--====== List ======-->
                                 <ul class="ah-list">
-                                    <li class="has-dropdown">
-
-                                        <span class="mega-text">M</span>
+                                    <li class="has-dropdown has-dropdown--ul-right-100">
+                                        
+                                        <!-- <span class="mega-text">M</span> -->
 
                                         <!--====== Mega Menu ======-->
 
@@ -208,55 +208,9 @@
                                             <div class="mega-menu-wrap">
                                                 <div class="mega-menu-list">
                                                     <ul>
-                                                        <li class="js-active">
-
-                                                            <a href="shop-side-version-2.html"><i class="fas fa-tv u-s-m-r-6"></i>
-
-                                                                <span>Electronics</span></a>
-
-                                                            <span class="js-menu-toggle js-toggle-mark"></span></li>
-                                                        <li>
-
-                                                            <a href="shop-side-version-2.html"><i class="fas fa-female u-s-m-r-6"></i>
-
-                                                                <span>Women's Clothing</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="shop-side-version-2.html"><i class="fas fa-male u-s-m-r-6"></i>
-
-                                                                <span>Men's Clothing</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="index.html"><i class="fas fa-utensils u-s-m-r-6"></i>
-
-                                                                <span>Food & Supplies</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="index.html"><i class="fas fa-couch u-s-m-r-6"></i>
-
-                                                                <span>Furniture & Decor</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="index.html"><i class="fas fa-football-ball u-s-m-r-6"></i>
-
-                                                                <span>Sports & Game</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="index.html"><i class="fas fa-heartbeat u-s-m-r-6"></i>
-
-                                                                <span>Beauty & Health</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
+                                                        
+                                                        
+                                                           
                                                     </ul>
                                                 </div>
 
@@ -323,7 +277,9 @@
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3">
+                                                                
                                                             <ul>
+                                                                <li>catego</li>
                                                                 <li class="mega-list-title">
 
                                                                     <a href="shop-side-version-2.html">VIDEO GAME ACCESSORIES</a></li>
