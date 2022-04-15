@@ -7,10 +7,10 @@ if (isset($_POST['add_product'])) {
   $Name = $_POST['Name'];
   $Description_product = $_POST['Description_product'];
   $price = $_POST['price'];
-  $categorie_product = $_POST['category_product'];
+  $supply = $_POST['supply'];
   $Assignment_Category = $_POST['Assignment_Category'];
   // Query used : 
-  $query = "INSERT INTO products(id, Name, price, Description_product, supply, Assignment_Category, image_dir) VALUES ('$id', '$Name', '$price', '$Description_product', '$supply', '$Assignment_Category', '')"; 
+  $query = "INSERT INTO products(id, Name, price, Description_product, supply, Assignment_Category) VALUES ('$id', '$Name', '$price', '$Description_product', '$supply', '$Assignment_Category', '')"; 
   $result = mysqli_query($conn, $query);
   $message = "Product added!";
 echo "<script type='text/javascript'>alert('$message');</script>";

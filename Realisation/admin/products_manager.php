@@ -30,7 +30,7 @@ include "db.php";
             <textarea name="price" rows="2" class="form-control" placeholder="Price"></textarea>
           </div>
           <div class="form-group">
-            <textarea name="category_product" rows="2" class="form-control" placeholder="Category"></textarea>
+            <textarea name="supply" rows="2" class="form-control" placeholder="supply"></textarea>
           </div>
           <!-- Categories Select -->
           <select class="form-select" aria-label="Default select example" name="Assignment_Category">
@@ -54,7 +54,7 @@ include "db.php";
             <th>Name</th>
             <th>Price</th>
             <th>Description_product</th>
-            <th>Category</th>
+            <th>supply</th>
             <th>Assignment_Category</th>
             <th>Action</th>
 
@@ -71,7 +71,7 @@ include "db.php";
             <td><?php echo $row['Name']; ?></td>
             <td><?php echo $row['price']; ?> dh</td>
             <td><?php echo $row['Description_product']; ?></td>
-            <td><?php echo $row['category_product']; ?></td>
+            <td><?php echo $row['supply'];?></td>
             <td><?php echo $row['Assignment_Category']; ?></td>
 
 

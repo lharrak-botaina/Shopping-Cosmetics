@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 15 avr. 2022 à 02:48
+-- Généré le : ven. 15 avr. 2022 à 11:34
 -- Version du serveur : 10.4.24-MariaDB
 -- Version de PHP : 7.4.28
 
@@ -80,7 +80,7 @@ CREATE TABLE `products` (
   `Name` varchar(255) NOT NULL,
   `price` float NOT NULL,
   `Description_product` varchar(255) NOT NULL,
-  `category_product` int(11) NOT NULL,
+  `supply` int(11) NOT NULL,
   `Assignment_Category` varchar(255) NOT NULL,
   `image_dir` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -89,7 +89,7 @@ CREATE TABLE `products` (
 -- Déchargement des données de la table `products`
 --
 
-INSERT INTO `products` (`id`, `Name`, `price`, `Description_product`, `category_product`, `Assignment_Category`, `image_dir`) VALUES
+INSERT INTO `products` (`id`, `Name`, `price`, `Description_product`, `supply`, `Assignment_Category`, `image_dir`) VALUES
 (2, 'Collagen & Hyaluronic Acid Ampoule', 100, 'Contains Marine Collagen and Hyaluronic Acid to improve skin elasticity and provide deep hydration to skin.', 1, 'Moisturizer', 'images/product/women/ampoule.webp'),
 (3, 'Hydro Boost Hydrating Cleansing Gel', 120, 'Neutrogena® Hydro Boost Hydrating Cleansing Gel boosts hydration for soft, supple skin. This lightweight gel cleanser transforms into a silky lather that effectively removes makeup and impurities. With hyaluronic acid.', 2, 'Facial Cleanser', 'images/product/women/Neutrogena Hydro Boost Water Gel Facial Cleanser for Dry or Dehydrated Skin 200ml.jfif'),
 (4, 'Farm Stay Escargot Noblesse Intensive Skin Care', 300, 'This Escargot Noblesse Intensive Skin Care 3 Set consists of a Toner (150ml), Intensive Cream (50ml),\r\nand an Intensive Emulsion (150ml), all of which contain amazing extracts from escargots fuond in nature that gives the skin a rich moisture boost.\r\nThis', 3, 'Skincare game', 'Farmstay Escargot Noblesse Lntensive Skin Care 5 Set.jfif'),
@@ -186,7 +186,7 @@ ALTER TABLE `category`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `category_product` (`category_product`);
+  ADD KEY `category_product` (`supply`);
 
 --
 -- Index pour la table `product_assignment`
@@ -256,7 +256,7 @@ ALTER TABLE `cartline`
 -- Contraintes pour la table `products`
 --
 ALTER TABLE `products`
-  ADD CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_product`) REFERENCES `category` (`id_category`);
+  ADD CONSTRAINT `products_ibfk_1` FOREIGN KEY (`supply`) REFERENCES `category` (`id_category`);
 
 --
 -- Contraintes pour la table `product_assignment`
