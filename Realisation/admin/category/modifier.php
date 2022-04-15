@@ -20,11 +20,11 @@ if(!empty($_POST)){
 	$produit = new produit_categorie();
 	$produit->setId_Produit($_POST['id']);
 	$produit->setNom_Produit($_POST['nom_produit']);
-	$produit->setPrix($_POST['prix']);
-	$produit->setDescription($_POST['description']);
-	$produit->setCategorie_produit($_POST['categorie_produit']);
-	$produit->setQuantite_stock($_POST['quantite_stock']);
-	$produit->setDate_dexpiration($_POST["date_d'expiration"]);
+	$produit->setPrix($_POST['price']);
+	$produit->setDescription($_POST['Description_pruduct']);
+	$produit->setCategorie_produit($_POST['category_product']);
+	// $produit->setQuantite_stock($_POST['quantite_stock']);
+	// $produit->setDate_dexpiration($_POST["date_d'expiration"]);
 	$produit->setPhoto($photo);
 
   $tempname = $_FILES["image"]["tmp_name"];

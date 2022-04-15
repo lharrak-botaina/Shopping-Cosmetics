@@ -114,48 +114,13 @@
                     <div class="container-fluid">
                     <div>
            <h1 class="titre text-center ">
-           <strong>TABLEAU DES PRODUITS</strong>
            </h1>
        </div>
          
                         <div class="row rowTable">
                             <div class="col-lg-12">
-                                <div class="table-responsive table--no-card m-b-30">
-                                    <table class="table table-borderless table-striped ">
-                                        <thead>
-                                            <tr>
-                                                <th>NOM PRODUIT</th>
-                                                <th>CATEGORIE</th>
-                                                <th>UNIT SOLD</th>
-                                                <th>ACTION</th>
-                                            </tr>
-                                          
-                                     
-                                        </thead>
-                                        <tbody>
-                                        <?php  foreach ($data as $value ) {
-                    
-                    ?>
-                                            <tr>
-                                                
-                                                      <td><?php echo $value->getNom_Produit() ?></td>
-                                                      <td><?php echo $value->getNom_Categorie() ?></td>
-                                                      <td><?php echo $value->getPrix() ?></td>
-                                                
-                                                
-                                                <td> 
-                                                    <a href="modifier.php?id=<?php echo $value -> getId_Produit() ?>">Editer</a>
-                                                    <a href="suprimer.php?id=<?php echo $value -> getId_Produit() ?>" ><i class="far fa-trash-alt fa-pen-to-square tm-product-delete-icon"></i></a>
-                                                </td>
-                                            </tr>
-                                           
-                                               <?php }?>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <a
-                  href="ajoute.php"
-                  class="btn btn-primary btn-block text-uppercase mb-3">Ajouter nouvelle produit </a>
+                                
+                               
                                                             
                             </div>
                         </div>

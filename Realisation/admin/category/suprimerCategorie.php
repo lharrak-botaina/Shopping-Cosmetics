@@ -8,5 +8,5 @@ if(isset($_GET['id'])){
     $id = $_GET['id'] ;
     $gestion->SupprimerCategorie($id);
 
-    header('Location: Table.php');
+    header('Location: index.php');
 }
