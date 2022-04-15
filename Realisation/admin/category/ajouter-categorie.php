@@ -156,7 +156,7 @@ if(!empty($_POST)){
                                              <div class="row">
                                                 <div class="col-6">
                                                     <div class="form-group ">
-                                                        <label for="cc-exp" class="control-label mb-1">$categorie</label>
+                                                        <label for="cc-exp" class="control-label mb-1">Categorie</label>
                                                         <input id="cc-exp" name="Category_Name" type="text" class="form-control cc-exp" value="" data-val="true" data-val-required="Please enter the card expiration"
                                                             data-val-cc-exp="Please enter a valid month and year"
                                                             autocomplete="cc-exp">
