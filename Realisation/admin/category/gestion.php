@@ -20,7 +20,7 @@ class Gestion{
     
     public function afficher(){
         $SelctRow = 'SELECT * FROM products
-         INNER JOIN category ON products.category_product = category.id_category';
+         INNER JOIN category ON products.supply = category.id_category';
         $query = mysqli_query($this->getConnection() ,$SelctRow);
         $produits_data = mysqli_fetch_all($query, MYSQLI_ASSOC);
         $TableData = array();
@@ -33,7 +33,7 @@ class Gestion{
                    $produit->setNom_Produit($value_Data['Name']);   
                    $produit->setDescription($value_Data['Description_product']);   
                 //    $produit->setDate_dexpiration($value_Data["date_d'expiration"]);   
-                   $produit->setCategorie_produit($value_Data["category_product"]);   
+                   $produit->setCategorie_produit($value_Data["supply"]);   
                 //    $produit->setQuantite_stock($value_Data["quantite_stock"]);   
                    $produit->setNom_Categorie($value_Data["Category_Name"]);   
                    array_push($TableData, $produit);
