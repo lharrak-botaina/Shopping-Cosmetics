@@ -735,9 +735,21 @@ include "db.php";
         <!--====== App Content ======-->
         <div class="app-content">
 
+        <?php 
+
+include "../Challenges/challenge.1/gestion.php";
+$gestion = new Gestion();
+
+$data = $gestion->getCartLine();
+ foreach($data as $value){ 
+//   echo '<br>'. $value->getProduct();
+} ?> 
+
+
             <!--====== Primary Slider ======-->
             <div class="s-skeleton s-skeleton--h-640 s-skeleton--bg-grey">
                 <div class="owl-carousel primary-style-3" id="hero-slider">
+                <?php foreach($data as $value){ ?>
                     <div class="hero-slide hero-slide--7">
                         <div class="primary-style-3-wrap">
                             <div class="container">
@@ -745,13 +757,14 @@ include "db.php";
                                     <div class="col-12">
                                         <div class="slider-content slider-content--animation">
 
-                                            <span class="content-span-1 u-c-white">Get Glowing Skin Now</span>
+                                            <span class="content-span-1 u-c-white"></span>
 
-                                            <span class="content-span-2 u-c-white">10% Discount on our products</span>
+                                            <span class="content-span-2 u-c-white"><?php echo $value->getProduct();?></span>
+                                            
 
                                             <span class="content-span-3 u-c-white">Find your routine skincare on best prices</span>
 
-                                            <span class="content-span-4 u-c-white">Starting At
+                                            <span class="content-span-4 u-c-white">Starting At </span>
 
                                                 <span class="u-c-brand">$10.00</span></span>
 
@@ -761,54 +774,12 @@ include "db.php";
                             </div>
                         </div>
                     </div>
-                    <div class="hero-slide hero-slide--8">
-                        <div class="primary-style-3-wrap">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="slider-content slider-content--animation">
-
-                                            <span class="content-span-1 u-c-white">Open Your Eyes</span>
-
-                                            <span class="content-span-2 u-c-white">10% Off On Cleanser&Toner</span>
-
-                                            <span class="content-span-3 u-c-white">Find Cleanser on best prices</span>
-
-                                            <span class="content-span-4 u-c-white">Starting At
-
-                                                <span class="u-c-brand">$10.00</span></span>
-
-                                            <a class="shop-now-link btn--e-brand" href="shop-side-version-2.html">SHOP NOW</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-slide hero-slide--9">
-                        <div class="primary-style-3-wrap">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="slider-content slider-content--animation">
-
-                                            <span class="content-span-1 u-c-white">Find Top Brands</span>
-
-                                            <span class="content-span-2 u-c-white">10% Off On skincare</span>
-
-                                            <span class="content-span-3 u-c-white">Find skincare product on best prices</span>
-
-                                            <span class="content-span-4 u-c-white">Starting At
-
-                                                <span class="u-c-brand">$10.00</span></span>
-
-                                            <a class="shop-now-link btn--e-brand" href="shop-side-version-2.html">SHOP NOW</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?> 
+                  
                 </div>
             </div>
+
+   
             <!--====== End - Primary Slider ======-->
 
             <!-- ====== Removed section ======= -->
