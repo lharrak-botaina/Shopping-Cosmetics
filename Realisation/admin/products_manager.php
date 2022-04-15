@@ -10,7 +10,7 @@ include "db.php";
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Add Products <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="../">Dashboard</a>
+      <a class="nav-item nav-link" href="../admin/index.php">Dashboard</a>
     </div>
   </div>
 </nav>
@@ -92,7 +92,7 @@ include "db.php";
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     By adn and cutie! © 2022 Copyright:
-    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <a class="text-dark" href="https://github.com/tba-adnan">github - shopping- ecommerce.</a>
   </div>
   <!-- Copyright -->
 </footer>
