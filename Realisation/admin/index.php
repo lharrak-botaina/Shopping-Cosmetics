@@ -1,9 +1,10 @@
 <?php
-  session_start(); 
-  if($_SESSION['Active'] == false){ 
-    header("location:login.php");
-    exit;
-  }
+include "db.php"; 
+//   session_start(); 
+//   if($_SESSION['Active'] == false){ 
+//     header("location:login.php");
+//     exit;
+//   }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -272,8 +273,11 @@
                             <a class="active" href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Other : <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
+                            <li>
+                                    <a href="products_manager.php">Products Manager</a>
+                                </li>
                                 <li>
                                     <a href="flot.html">Flot Charts</a>
                                 </li>
