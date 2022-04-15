@@ -76,7 +76,12 @@
                                     <span class="ah-close">✕ Close</span>
 
                                     <!--====== List ======-->
+                                
                                     <ul class="ah-list ah-list--design1 ah-list--link-color-white">
+                                        <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="categorie">
+
+                                        </li>
+
                                         <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Account">
 
                                             <a><i class="far fa-user-circle"></i></a>
@@ -96,6 +101,8 @@
 
                                         
                                             </ul>
+                                           
+                                                
                                             <!--====== End - Dropdown ======-->
                                         </li>
                                         <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Settings">
@@ -805,6 +812,9 @@
 
             <!--====== Section 3 ======-->
             <div class="u-s-p-b-60">
+                
+           
+                                        
 
                 <!--====== Section Intro ======-->
                 <div class="section__intro u-s-m-b-46">
