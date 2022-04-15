@@ -54,7 +54,7 @@ include "db.php";
             <th>Name</th>
             <th>Price</th>
             <th>Description_product</th>
-            <th>Supply</th>
+            <th>Category</th>
             <th>Assignment_Category</th>
           </tr>
         </thead>
@@ -69,7 +69,8 @@ include "db.php";
             <td><?php echo $row['Name']; ?></td>
             <td><?php echo $row['price']; ?> dh</td>
             <td><?php echo $row['Description_product']; ?></td>
-            <td><?php echo $row['supply']; ?></td>
+            <td><?php echo $row['category_product']; ?></td>
+
             <td><?php echo $row['Assignment_Category']; ?></td>
           </tr>
               <!-- <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
