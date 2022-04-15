@@ -77,9 +77,9 @@ include "db.php";
 
 
           </tr>
-             <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
+             <!-- <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
                 <i class="fas fa-marker"></i>
-              </a> 
+              </a>  -->
               <!-- <a href="delete_task.php?id=<?php echo $row['id']?>" class="btn btn-danger">
                 <i class="far fa-trash-alt"></i>  -->
               </a>
