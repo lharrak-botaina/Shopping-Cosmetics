@@ -30,7 +30,7 @@ include "db.php";
             <textarea name="price" rows="2" class="form-control" placeholder="Price"></textarea>
           </div>
           <div class="form-group">
-            <textarea name="supply" rows="2" class="form-control" placeholder="supply"></textarea>
+            <textarea name="supply" rows="2" class="form-control" placeholder="Supply"></textarea>
           </div>
           <!-- Categories Select -->
           <select class="form-select" aria-label="Default select example" name="Assignment_Category">
