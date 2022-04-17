@@ -26,6 +26,7 @@ class Gestion {
             $cartLine->setIdProduct($value['Id_product']);
             $cartLine->setProductCartQuantity($value['SUM(Product_cart_quantity)']);
             $cartLine->setProduct($value['Name']);
+
             array_push($cartLineList, $cartLine);
         }
         return $cartLineList;
